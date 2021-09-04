@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:gravity="center">
+
+	<TextView
+		android:text="Clic to show what dish we will eat today"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textSize="32sp"
+		android:layout_gravity="top"
+		android:layout_marginTop="20dp"
+		android:id="@+id/main_sign"
+		android:clickable="true"
+		android:height="120sp"
+		android:gravity="top|center"
+		android:paddingTop="40dp"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal"
+		android:layout_weight="1"
+		android:gravity="top">
+
+		<RadioGroup
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:textSize="26dp"
+			android:padding="10dp"
+			android:layout_gravity="center"
+			android:gravity="center">
+
+			<RadioButton
+				android:id="@+id/radio_all"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="all"
+				android:checked="true"
+				android:onClick="onRadioButtonClick"/>
+
+			<RadioButton
+				android:id="@+id/radio_soups"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="soups"
+				android:onClick="onRadioButtonClick"/>
+
+			<RadioButton
+				android:id="@+id/radio_porriges"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="side dishes"
+				android:onClick="onRadioButtonClick"/>
+			
+			<RadioButton
+				android:id="@+id/radio_meats"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="meat dishes"
+				android:onClick="onRadioButtonClick"/>
+			
+			
+
+		</RadioGroup>
+
+	</LinearLayout>
+
+</LinearLayout>
+

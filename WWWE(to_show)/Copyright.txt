@@ -1,0 +1,3 @@
+/**
+*	Copyright © 2019-present Maister Bohdan. All rights reserved.
+*/
